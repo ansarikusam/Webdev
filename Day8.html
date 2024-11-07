@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .navigator {
+            display: flex;
+            flex-direction: row;
+            background-color: #e2c4c4;
+            color: #000;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            z-index: 500;
+        }
+
+        .heading h1 {
+            font-size: 150%;
+            padding: 10%;
+            margin-left: 15%;
+        }
+
+        .items {
+            display: flex;
+
+
+        }
+
+        .menu li {
+            display: inline;
+            list-style: none;
+            padding: 20px;
+
+
+        }
+        .menu li:hover{
+            background-color: red;
+            
+        }
+
+        .logo {
+            display: flex;
+            margin-right: 5%;
+        }
+
+        .logo i {
+            padding: 6px;
+        }
+
+        .main {
+            display: flex;
+            position: fixed;
+            top: 10%;
+            right: 0%;
+            left: 0%;
+            z-index: -800;
+        }
+
+        .main img {
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .headin {
+            display: flex;
+        }
+
+        
+
+        .headin {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17%;
+            color: #fff;
+            grid-template-columns: min-content;
+        }
+
+        .headin h1{
+            font-size: xx-large;
+           
+        }
+        .btn {
+            border: 2px;
+            padding: 10px;
+            border-radius: 80px;
+
+            font-size: large;
+
+            background-color: aqua;
+        }
+        .btn:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigator">
+        <div class="heading">
+            <h1>KELLY</h1>
+        </div>
+        <div class="menu">
+            <ul class="items">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>RESUME</li>
+                <li>SERVICES</li>
+                <li>PORTFOLIO</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </nav>
+    <section>
+        <div class="main">
+            <img src="https://cdn.windowsreport.com/wp-content/uploads/sites/3/2020/07/logiciels-de-cr%C3%A9ation-de-sites-Web.jpg"
+                alt="">
+        </div>
+        <div class="headin">
+            <h1>
+                Kelly Adams
+            </h1>
+            <h3>
+                A Professional Illustrator From San Francisco
+            </h3>
+
+            <button class="btn">About Me</button>
+        </div>
+    </section>
+    <section>
+
+    </section>
+
+</body>
+
+</html>

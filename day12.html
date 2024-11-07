@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .outline{
+        border: 10px solid red;
+
+    }
+
+.taskstyle{
+    transition: 1s;
+
+}
+.taskstyle:hover{
+    background-color: grey;
+}
+.unselect{
+    background-color: red;
+    color: white;
+    
+}
+
+
+
+</style>
+
+
+<body>
+    
+create dynamic element
+
+<input type="text" name="" id="name">
+<h1 id="showmyname"> </h1>
+
+<button onclick="showmyname()"> Click to show name </button>
+
+
+<br><br>
+<input type="text" name="" id="imgaddress">
+
+
+<button onclick="showimage()"> enter</button>
+
+
+<br><br>
+
+<input type="text" id="todo">
+<button onclick="createTodo()"> show todo</button>
+
+<ul id="tasks">
+
+    
+</ul>
+
+<script>
+
+    function showmyname()
+    {
+
+        const myname = document.getElementById("name").value
+
+        const heading = document.getElementById("h1")
+        heading.innerText=myname
+
+        document.body.append(heading)
+    }
+
+
+    function showimage()
+    {
+
+        const myimage = document.getElementById("imgaddress").value
+
+        const img = document.createElement("img")
+        img.src= myimage 
+        img.alt= "not-found"
+        // heading.innerText=myname
+        img.height="300"
+        img.width="200"
+
+        document.body.append(img)
+    }
+
+    function createTodo()
+    {
+        const todovalue = document.getElementById("todo").value
+
+
+        const tasks = document.getElementById("tasks")
+
+        const listitem = document.createElement("li")
+
+        listitem.innerText = todovalue
+        listitem.classList="taskstyle"
+        // listitem.classList="taskstyle.hover"
+
+        // listitem.onclick="change()"
+
+        // listitem.classList="unselect"
+
+
+
+
+        tasks.append(listitem)
+        
+
+        document.body.append(tasks)
+
+    }
+    function change(){
+        
+    }
+
+
+
+</script>
+
+</body>
+</html>
